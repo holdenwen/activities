@@ -1,0 +1,34 @@
+# Folders to ignore
+.build
+.runtime
+node_modules
+bower_components
+documents
+
+# Numerous always-ignore extensions
+*.bak
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.zip
+*.vi
+*~
+
+# OS or Editor folders
+.DS_Store
+._*
+Thumbs.db
+.cache
+.project
+.settings
+.tmproj
+*.esproj
+nbproject
+*.vscode
+*.sublime-project
+*.sublime-workspace
+.idea
