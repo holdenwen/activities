@@ -5,7 +5,7 @@
   "license": "MIT",
   "description": "activities system",
   "scripts": {
-    "test": "karma"
+    "test": "karma start build/karma.base.config.js"
   },
   "engines": {
     "node": ">= 0.11.12"
