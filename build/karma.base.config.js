@@ -20,6 +20,7 @@ module.exports = function(config) {
     ],
 
     // list of files to exclude
+    // 排除的文件
     exclude: [
     ],
 
