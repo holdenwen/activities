@@ -1,63 +1,37 @@
-// Karma configuration
-// Generated on Wed Sep 21 2016 21:42:18 GMT+0800 (CST)
-
-module.exports = function(config) {
-  config.set({
-
-    // base path that will be used to resolve all patterns (eg. files, exclude)
+module.exports = {
     // 基础路径
     basePath: '',
-
-    // frameworks to use
-    // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
     // 测试框架
     frameworks: ['jasmine'],
-
-    // list of files / patterns to load in the browser
+    // 设置在浏览器运行的文件和模式列表
     files: [
-      'test-main.js',
-      {pattern: 'test/xxSpec.js', included: false}
+        // 'test-main.js',
+        {pattern: 'test/**/*Spec.js', included: false}
     ],
-
-    // list of files to exclude
     // 排除的文件
     exclude: [
     ],
-
-    // preprocess matching files before serving them to the browser
-    // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
+    // 运行前对匹配文件进行预处理
     preprocessors: {
     },
-
-    // test results reporter to use
+    // 测试结果报告
     // possible values: 'dots', 'progress'
-    // available reporters: https://npmjs.org/browse/keyword/karma-reporter
     reporters: ['progress'],
-
-    // web server port
+    // 服务器端口
     port: 9876,
-
-    // enable / disable colors in the output (reporters and logs)
+    // 输出信息（包括测试报告和日志）是否显示彩色
     colors: true,
-
-    // level of logging
+    // 日志等级
     // possible values: config.LOG_DISABLE || config.LOG_ERROR || config.LOG_WARN || config.LOG_INFO || config.LOG_DEBUG
     logLevel: config.LOG_INFO,
-
-    // enable / disable watching file and executing tests whenever any file changes
+    // 是否自动监测测试用例改动
     autoWatch: true,
-
-    // start these browsers
-    // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
     // 运行浏览器
     browsers: ['Chrome'],
-
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
     singleRun: false,
-
-    // Concurrency level
-    // how many browser should be started simultaneous
+    // 并发等级
+    // 设置浏览器同时进行的数量
     concurrency: Infinity
-  })
-}
+};
