@@ -6,5 +6,6 @@ module.exports = function(config) {
         browsers: ['phantomjs']
         // test ssh
         // test ssh
+        // test ssh
     }));
 };
