@@ -5,5 +5,6 @@ module.exports = function(config) {
         framework: ['jasmine'],
         browsers: ['phantomjs']
         // test ssh
+        // test ssh
     }));
 };
