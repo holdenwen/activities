@@ -4,5 +4,6 @@ module.exports = function(config) {
     config.set(Object.assign(base, {
         framework: ['jasmine'],
         browsers: ['phantomjs']
+        // test ssh
     }));
 };
