@@ -8,6 +8,6 @@ module.exports = function(config) {
         // test ssh
         // test ssh
         // test ssh
-        // test ssh from MacBook Air
+        // test ssh from MacBook Air 2
     }));
 };
